@@ -1,0 +1,27 @@
+{
+  "name": "techaurelian.com",
+  "description": "The TechAurelian website.",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf _site",
+    "dev:css": "npx tailwindcss -i ./_site/assets/css/main-src.css -o ./_site/assets/css/main.css --watch",
+    "dev:eleventy": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy --serve --incremental",
+    "start": "npm-run-all --sequential clean build:eleventy --parallel dev:eleventy dev:css",
+    "build:css": "cross-env NODE_ENV=production npx tailwindcss -i ./_site/assets/css/main-src.css -o ./_site/assets/css/main.css --minify",
+    "build:eleventy": "cross-env ELEVENTY_ENV=production npx @11ty/eleventy",
+    "build": "npm-run-all --sequential clean build:eleventy build:css"
+  },
+  "author": "TechAurelian",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "@tailwindcss/forms": "^0.5.2",
+    "@tailwindcss/typography": "^0.5.2",
+    "autoprefixer": "^10.4.7",
+    "cross-env": "^7.0.3",
+    "markdown-it": "^13.0.1",
+    "markdown-it-attrs": "^4.1.4",
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^3.1.4"
+  }
+}

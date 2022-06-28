@@ -1,0 +1,26 @@
+---
+permalink: /assets/css/main-src.css
+layout: raw
+---
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+}
+
+@layer components {
+  
+  .tca-container {
+    @apply px-6 md:px-12 xl:px-0 container mx-auto;
+  }
+
+  .tca-container-lg {
+    @apply tca-container max-w-screen-lg;
+  }
+}
+
+@layer utilities {
+}
+
