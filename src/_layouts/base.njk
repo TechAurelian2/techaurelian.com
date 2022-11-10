@@ -1,27 +1,7 @@
 <!doctype html>
 <html lang="en" class="text-gray-700 antialiased bg-white">
 <head>
-  {# Required meta tags #}
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  {# SEO #}
-  <title>{{ tcaSeoTitle or title }}</title>
-  <meta name="description" content="{{ tcaSeoDescription }}">
-  <link rel="canonical" href="{{ site.url }}{{ canonicalUrl or page.url }}">
-
-  {# Tailwind & Site CSS #}
-  <link href="/assets/css/main.css" rel="stylesheet">
-
-  {# Icons, manifest, theme #}
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="manifest" href="/site.webmanifest">
-  {# <meta name="theme-color" content="#000000"> #}
-
-  {# Web Analytics  #}
-  {% if site.isProduction %}
-    {% include "blocks/common/web-analytics.njk" %}
-  {% endif %}
+  {% include "blocks/common/head.njk" %}
 </head>
 <body class="antialiased text-zinc-700">
 
