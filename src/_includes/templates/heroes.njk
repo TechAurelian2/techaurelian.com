@@ -1,0 +1,18 @@
+{% macro basicHero() %}
+  <div class="py-16 bg-zinc-700 bg-opacity-75">
+    <div class="tca-container-lg">
+      {% if tcaSectionName %}
+        <p class="text-gray-400 font-semibold text-xl">
+          <a href="{{ tcaSectionRoot }}">{{ tcaSectionName }}</a>
+        </p>
+      {% endif %}
+      {% if title %}
+        <h1 class="text-5xl tracking-tight font-bold text-white">
+          {% if tcaTitleLink %}<a href="{{ tcaTitleLink }}">{% endif %}
+            {{ title }}
+          {% if tcaTitleLink %}</a>{% endif %}
+        </h1>
+      {% endif %}
+    </div>
+  </div>
+{% endmacro %}

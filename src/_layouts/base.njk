@@ -27,13 +27,7 @@
 
   <div class="tca-pattern">
     {% include "blocks/common/header.njk" %}
-    <section class="py-16">
-      {% if tcaHero %}
-        {% include "blocks/heroes/" + tcaHero %}
-      {% else %}
-        {# {{ basicHero() }} #}
-      {% endif %}
-    </section>
+    {% include "blocks/common/hero.njk" %}
   </div>
 
   {{ content | safe }}

@@ -1,0 +1,9 @@
+{% from "templates/heroes.njk" import basicHero with context %}
+
+<section>
+  {% if tcaHero %}
+    {% include "blocks/heroes/" + tcaHero %}
+  {% else %}
+    {{ basicHero() }}
+  {% endif %}
+</section>

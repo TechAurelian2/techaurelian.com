@@ -1,5 +1,6 @@
 ---
 title: Hello World Counters
+tcaSubtitle: "My first Hello World Flutter app: An easy to use tally counter app for Android, with multiple color counters."
 
 tcaHero: apps/helloworldcounters.njk
 ---

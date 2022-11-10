@@ -1,6 +1,6 @@
 ---
-title: Hello World Counters Privacy Policy
-tcaSeoTitle: Hello World Counters - Privacy Policy
+title: Privacy Policy
+tcaSeoTitle: Hello World Counters Privacy Policy
 ---
 
 {# Based on https://app-privacy-policy-generator.firebaseapp.com/ #}
