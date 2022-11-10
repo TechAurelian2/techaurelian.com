@@ -1,5 +1,7 @@
 ---
 title: Hello World Counters
+
+tcaHero: apps/helloworldcounters.njk
 ---
 
 ## Overview
