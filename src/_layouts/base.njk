@@ -1,14 +1,13 @@
 <!doctype html>
-<html lang="en" class="text-gray-700 antialiased bg-white">
+<html lang="en" class="dark">
 <head>
   {% include "blocks/common/head.njk" %}
 </head>
-<body class="antialiased text-zinc-700">
+<body class="antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900">
 
-  <div class="tca-pattern">
-    {% include "blocks/common/header.njk" %}
-    {% include "blocks/common/hero.njk" %}
-  </div>
+  {% include "blocks/common/header.njk" %}
+  {% include "blocks/common/hero.njk" %}
+  {% include "blocks/common/screenshot-section.njk" %}
 
   {{ content | safe }}
 
