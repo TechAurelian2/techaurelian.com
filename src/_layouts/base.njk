@@ -5,9 +5,11 @@
 </head>
 <body class="antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900">
 
-  {% include "blocks/common/header.njk" %}
-  {% include "blocks/common/hero.njk" %}
-  {% include "blocks/common/screenshot-section.njk" %}
+  <div class="dark:tca-pattern">
+    {% include "blocks/common/header.njk" %}
+    {% include "blocks/common/hero.njk" %}
+    {% include "blocks/common/screenshot-section.njk" %}
+  </div>
 
   {{ content | safe }}
 
