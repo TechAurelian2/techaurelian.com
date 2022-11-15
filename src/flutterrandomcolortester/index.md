@@ -1,12 +1,12 @@
 ---
 title: Flutter Random Color Tester
-tcaSubtitle: "A Flutter test app that generates attractive random colors with the flutter_randomcolor Dart package"
+tcaSubtitle: "A Flutter test app that you can run in your browser to generate dozens or hundreds of attractive random colors."
 
 tags: [free, open-source, test-app, web, pwa]
 
 tcaHeroShowSectionName: false
 
-# tcaScreenshotSection: apps/helloworldcounters.njk
+tcaScreenshots: tests/flutterrandomcolortester.njk
 ---
 
 ## Overview

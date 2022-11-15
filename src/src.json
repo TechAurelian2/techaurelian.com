@@ -2,5 +2,6 @@
   "layout": "page",
   "tcaUseImageCDNScript": true,
   "tcaHeroShowSectionName": true,
-  "tcaHeroShowTags": true
+  "tcaHeroShowTags": true,
+  "tcaContentHasProse": true
 }

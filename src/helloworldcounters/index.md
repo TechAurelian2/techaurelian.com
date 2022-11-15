@@ -6,7 +6,7 @@ tags: [free, open-source, hello-world, web, android]
 
 tcaHeroShowSectionName: false
 
-tcaScreenshotSection: apps/helloworldcounters.njk
+tcaScreenshots: apps/helloworldcounters.njk
 ---
 
 ## Overview
@@ -37,4 +37,4 @@ Hello World apps are pretty famous, even if all they usually do is write "Hello,
 
 Hello World Counters is free and doesn't contain any advertisements. It contains no permissions, either, so you don't have to worry about your privacy being compromised.
 
-It's also open source. The project is hosted on GitHub and licensed under the MIT license. I look forward to your feedback or contributions!
+It's also open source. The project is hosted on [GitHub](https://github.com/TechAurelian/hello_world_counters){target=_blank} and licensed under the [MIT license](https://github.com/TechAurelian/hello_world_counters/blob/main/LICENSE){target=_blank}. I look forward to your feedback or contributions!

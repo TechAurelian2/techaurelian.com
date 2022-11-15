@@ -28,10 +28,13 @@
   }
 
   .tca-prose {
-    @apply prose prose-neutral dark:prose-invert lg:prose-lg xl:prose-xl mx-auto max-w-none;
+    @apply prose prose-indigo dark:prose-invert lg:prose-lg xl:prose-xl mx-auto max-w-none;
   }
 
 }
 
 @layer utilities {
+  .tca-device-border {
+    @apply rounded-lg shadow-lg border-neutral-400 border-[0.75rem];
+  }
 }
