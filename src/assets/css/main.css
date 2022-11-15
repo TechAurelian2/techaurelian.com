@@ -11,6 +11,10 @@
     @apply px-6 md:px-12 xl:px-0 container mx-auto;
   }
 
+  .tca-container-sm {
+    @apply tca-container max-w-screen-sm;
+  }
+
   .tca-container-md {
     @apply tca-container max-w-screen-md;
   }

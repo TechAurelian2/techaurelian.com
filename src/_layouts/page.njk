@@ -2,7 +2,7 @@
 layout: base
 ---
 
-<div class="tca-container-md pb-16">
+<div class="{{ tcaContentContainer or "tca-container-md" }} pb-16">
   <div class="tca-prose">
     {{ content | safe }}
   </div>
