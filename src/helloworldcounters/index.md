@@ -12,7 +12,7 @@ tcaScreenshotSection: apps/helloworldcounters.njk
 
 ## Overview
 
-Hello World Counters is an easy-to-use tally counter app for Android. It gives you a different counter for each of the unambiguous color terms in English: White, Black, Red, Green, Yellow, Blue, Brown, Purple, Pink, Orange, and Grey. This means you can count people, sheep, kisses, or smiles, and nobody will know what you are counting! (And if you do get caught, just tell them that it's a game.)
+Hello World Counters is an easy-to-use tally counter app for Android. It gives you a different counter for each of the unambiguous color terms in English: White, Black, Red, Green, Yellow, Blue, Brown, Purple, Pink, Orange, and Gray. This means you can count people, sheep, kisses, or smiles, and nobody will know what you are counting! (And if you do get caught, just tell them that it's a game.)
 
 You can increment or decrement the counter, reset its value back to zero, or share it by email, messenger apps, or social networks. Hello World Counters are a great way to pass the time when you are bored, or just need something simple and fun to do.
 
@@ -28,9 +28,7 @@ The Hello World Counters are simple, clean, and perfect for everyone.
 
 Hello World Counters is a simple app that does one thing and does it well: counts the number of times you say "Hello World." The app is simple to use: just tap the screen each time you say Hello World.
 
-Really?
-
-No, actually I'm learning Flutter, and this is my first Hello World Flutter app.
+Really? No, actually, I'm learning Flutter, and this is my first Hello World Flutter app.
 
 Hello World apps are pretty famous, even if all they usually do is write "Hello, World!" on the screen. Starting with such a simple program has become a tradition when learning a new programming language or platform.
 

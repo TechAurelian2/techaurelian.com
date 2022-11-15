@@ -1,0 +1,43 @@
+{% macro headerNavItem(title, icon, label, link) %}
+  {# <a class="inline-block px-3 sm:px-4 py-1.5 text-white rounded-sm {{ 'font-extrabold' if itemSection == tcaTopSection }} hover:bg-zinc-600" href="{{ link | url }}">{{ title }}</a> #}
+
+  <li>
+    <a href="{{ link | url }}" class="flex items-center p-2 text-base font-normal text-neutral-900 rounded-lg dark:text-white hover:bg-neutral-100 dark:hover:bg-neutral-700">
+        {% if icon %}
+          {% set svgClasses = "flex-shrink-0 w-6 h-6 text-neutral-500 transition duration-75 dark:text-neutral-400 group-hover:text-neutral-900 dark:group-hover:text-white" %}
+          {% include "assets/svg/" + icon %}
+        {% endif %}
+        {# <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-neutral-500 transition duration-75 dark:text-neutral-400 group-hover:text-neutral-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg> #}
+        <span class="flex-1 ml-3 whitespace-nowrap">{{ title }}</span>
+        {% if label %}
+          <span class="inline-flex justify-center items-center px-2 ml-3 text-sm font-medium text-neutral-800 bg-neutral-200 rounded-full dark:bg-neutral-700 dark:text-neutral-300">{{ label }}</span>
+        {% endif %}
+    </a>
+  </li>
+{% endmacro %}
+
+<header class="dark:bg-neutral-900 text-white py-16 px-8 h-full">
+  <div class="">
+    <a class="text-3xl font-bold" href="{{ '/' | url }}">
+      TechAurelian
+    </a>
+
+    <nav class="font-medium">
+      <ul class="space-y-2 mt-4">
+        {# {{ headerNavItem("/", "Home", "home") }} #}
+        {{ headerNavItem(title = "Apps", icon = "theme/apps.svg", link = "/apps/") }}
+        {{ headerNavItem(title = "Hello World Counters", label = "New", link = "/helloworldcounters/") }}
+      </ul>
+      <ul class="pt-4 mt-4 space-y-2 border-t border-neutral-200 dark:border-neutral-700">
+        {{ headerNavItem(title = "Tests", icon = "theme/tests.svg", link = "/tests/") }}
+        {{ headerNavItem(title = "Flutter Random Color Tester", label = "New", link = "/frctester/") }}
+      </ul>
+      <ul class="pt-4 mt-4 space-y-2 border-t border-neutral-200 dark:border-neutral-700">
+        {# {{ headerNavItem("/reviews/", "Reviews", "reviews") }} #}
+        {{ headerNavItem(title = "Contact", icon = "theme/contact.svg", link = "/contact/") }}
+        {{ headerNavItem(title = "About", icon = "theme/about.svg", link = "/about/") }}
+        {# {{ headerNavItem("https://github.com/TechAurelian", "GitHub", "github") }} #}
+      </ul>
+    </nav>
+  </div>
+</header>
