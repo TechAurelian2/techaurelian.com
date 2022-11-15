@@ -4,7 +4,6 @@ tcaSubtitle: "My first Hello World Flutter app: An easy to use tally counter app
 
 tags: [free, open-source, hello-world, web, android]
 
-tcaHero: apps/helloworldcounters.njk
 tcaHeroShowSectionName: false
 
 tcaScreenshotSection: apps/helloworldcounters.njk
@@ -32,7 +31,7 @@ Really? No, actually, I'm learning Flutter, and this is my first Hello World Flu
 
 Hello World apps are pretty famous, even if all they usually do is write "Hello, World!" on the screen. Starting with such a simple program has become a tradition when learning a new programming language or platform.
 
-Flutter is Google's UI toolkit for crafting beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.
+[Flutter](https://flutter.dev/){target=_blank} is a UI toolkit for crafting beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.
 
 ## Open Source
 
