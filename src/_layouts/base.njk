@@ -7,18 +7,18 @@
 
 
 
-  <div class="flex">
-    <div class="flex-shrink-0 max-w-sm w-1/3">
+  <div class="sm:flex">
+    <div class="sm:flex-shrink-0 sm:max-w-sm sm:w-1/3">
       {% include "blocks/common/sidebar.njk" %}
     </div>
-    <div class="w-full dark:bg-neutral-800">
-      <div class="max-w-screen-lg mx-auto py-24">
+    <div class="sm:w-full dark:bg-neutral-800">
+      <div class="sm:max-w-screen-lg sm:mx-auto sm:py-24">
         <main class="dark:bg-neutral-900">
           {% if tcaShowHero %}
             {% include "blocks/common/hero.njk" %}
           {% endif %}
           {% include "blocks/common/screenshots.njk" %}
-          <div class="px-16">
+          <div>
             {{ content | safe }}
           </div>
         </main>

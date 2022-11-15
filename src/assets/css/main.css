@@ -35,6 +35,6 @@
 
 @layer utilities {
   .tca-device-border {
-    @apply rounded-lg shadow-lg border-neutral-400 border-[0.75rem];
+    @apply rounded-lg shadow-lg border-neutral-400 border-[0.25rem] sm:border-[0.75rem];
   }
 }
