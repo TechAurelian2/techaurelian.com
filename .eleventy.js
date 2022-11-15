@@ -4,6 +4,7 @@ const markdownItAttrs = require("markdown-it-attrs");
 
 module.exports = function (eleventyConfig) {
 
+  eleventyConfig.addPassthroughCopy('src/assets/img/');
   eleventyConfig.addPassthroughCopy('src/favicon.ico');
   eleventyConfig.addPassthroughCopy('src/site.webmanifest');
 

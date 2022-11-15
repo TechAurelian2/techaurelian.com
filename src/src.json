@@ -1,6 +1,7 @@
 {
   "layout": "page",
   "tcaUseImageCDNScript": true,
+  "tcaShowHero": true,
   "tcaHeroShowSectionName": true,
   "tcaHeroShowTags": true,
   "tcaContentHasProse": true
