@@ -1,6 +1,7 @@
 const yaml = require("js-yaml");
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require("markdown-it-attrs");
+const markdownItBracketedSpans = require("markdown-it-bracketed-spans");
 
 module.exports = function (eleventyConfig) {
 
@@ -11,7 +12,7 @@ module.exports = function (eleventyConfig) {
   // Add support for YAML data files
   eleventyConfig.addDataExtension('yaml', contents => yaml.safeLoad(contents));
 
-  const markdownLib = markdownIt({ html: true }).use(markdownItAttrs);
+  const markdownLib = markdownIt({ html: true }).use(markdownItBracketedSpans).use(markdownItAttrs);
   eleventyConfig.setLibrary("md", markdownLib);
 
   return {

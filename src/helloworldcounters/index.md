@@ -1,15 +1,22 @@
 ---
 title: Hello World Counters
-tcaSubtitle: "My first Hello World Flutter app: An easy to use tally counter app for Android, with multiple color counters."
+
+tcaHero:
+  showSectionName: false
+  ctaButton: Install/Run
+  ctaButtonLink: /helloworldcounters/download/
+  ctaInfo: Natively on Android. In your browser on Android, ChromeOS, iOS, Linux, macOS, Windows, and more.
+
+eleventyComputed:
+  tcaHero:
+    subtitle: "{{ apps.helloworldcounters.description }}"
 
 tags: [free, open-source, hello-world, web, android]
-
-tcaHeroShowSectionName: false
 
 tcaScreenshots: apps/helloworldcounters.njk
 ---
 
-## Overview
+## Overview {.mt-0}
 
 Hello World Counters is an easy-to-use tally counter app for Android. It gives you a different counter for each of the unambiguous color terms in English: White, Black, Red, Green, Yellow, Blue, Brown, Purple, Pink, Orange, and Gray. This means you can count people, sheep, kisses, or smiles, and nobody will know what you are counting! (And if you do get caught, just tell them that it's a game.)
 

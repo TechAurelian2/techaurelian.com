@@ -1,15 +1,23 @@
 ---
 title: Flutter Random Color Tester
-tcaSubtitle: "A Flutter test app that you can run in your browser to generate dozens or hundreds of attractive random colors."
+
+tcaHero:
+  showSectionName: false
+  isLongTitle: true
+  ctaButton: Install/Run
+  ctaButtonLink: /flutterrandomcolortester/download/
+  ctaInfo: In your browser on Android, ChromeOS, iOS, Linux, macOS, Windows, and more.
+
+eleventyComputed:
+  tcaHero:
+    subtitle: "{{ tests.flutterrandomcolortester.description }}"
 
 tags: [free, open-source, test-app, web, pwa]
-
-tcaHeroShowSectionName: false
 
 tcaScreenshots: tests/flutterrandomcolortester.njk
 ---
 
-## Overview
+## Overview {.mt-0}
 
 A basic Flutter project that tests the [flutter_randomcolor](https://pub.dev/packages/flutter_randomcolor){target=_blank} Dart package for generating attractive random colors.
 

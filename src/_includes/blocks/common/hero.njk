@@ -1,30 +1,35 @@
-<div class="tca-container-lg">
-  {% if tcaHeroShowSectionName and tcaSectionName %}
+{% from "templates/buttons.njk" import primaryLinkButton with context %}
+
+<div class="tca-container-md">
+  {% if tcaHero.showSectionName and tcaSectionName %}
     <p class="text-neutral-400 font-semibold text-xl">
       <a href="{{ tcaSectionRoot }}">{{ tcaSectionName }}</a>
     </p>
   {% endif %}
+
+  {# Hero title (and optional title link) #}
   {% if title %}
-    <h1 class="mb-4 text-3xl font-extrabold text-neutral-900 dark:text-white md:text-5xl lg:text-6xl">
-      {# <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-indigo-600"> #}
+    <h1 class="font-extrabold text-neutral-900 dark:text-white {{ 'text-3xl md:text-5xl lg:text-6xl' if not tcaHero.isLongTitle else 'text-2xl md:text-4xl lg:text-5xl' }}">
       <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-indigo-600">
-      {% if tcaTitleLink %}<a href="{{ tcaTitleLink }}">{% endif %}
+      {% if tcaHero.titleLink %}<a href="{{ tcaHero.titleLink }}">{% endif %}
         {{ title }}
-      {% if tcaTitleLink %}</a>{% endif %}
+      {% if tcaHero.titleLink %}</a>{% endif %}
       </span>
     </h1>
   {% endif %}
-  {% if tcaSubtitle %}
-    <h2 class="text-lg font-normal text-neutral-500 lg:text-xl dark:text-neutral-400 space-x-3">
-      <span>{{ tcaSubtitle }}</span>
-      {% if tcaHeroShowTags %}
-        {# display tags with hashtags #}
-        <span class="pr-4 space-x-3 my-4 text-lg text-neutral-500">
-          {% for tag in tags %}
-            <span>#{{ tag }}</span>
-          {% endfor %}
-        </span>
+
+  {# Hero subtitle (description) #}
+  {% if tcaHero.subtitle %}
+    <h2 class="mt-4 text-lg font-normal text-neutral-500 lg:text-xl dark:text-neutral-400 space-x-3">{{ tcaHero.subtitle }}</h2>
+  {% endif %}
+
+  {# Hero CTA button and info #}
+  {% if tcaHero.ctaButton %}
+    <div class="mt-8 flex items-center gap-6">
+      {{ primaryLinkButton(title = tcaHero.ctaButton, link = tcaHero.ctaButtonLink, icon="theme/play.svg") }}
+      {% if tcaHero.ctaInfo %}
+        <span class="text-xs dark:text-neutral-500 max-w-xs">{{ tcaHero.ctaInfo }}</span>
       {% endif %}
-    </h2>
+    </div>
   {% endif %}
 </div>
