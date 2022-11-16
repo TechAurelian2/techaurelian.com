@@ -3,27 +3,39 @@
 <head>
   {% include "blocks/common/head.njk" %}
 </head>
-<body class="antialiased text-neutral-500 dark:text-neutral-400 bg-white dark:bg-neutral-800">
+<body class="antialiased text-neutral-500 dark:text-neutral-400 bg-white dark:bg-neutral-900">
 
 
 
   <div class="sm:flex">
     <div class="sm:flex-shrink-0 sm:max-w-sm sm:w-1/3">
-      {% include "blocks/common/sidebar.njk" %}
+      <aside class="dark:bg-neutral-900 h-full py-24">
+        {% include "blocks/common/sidebar.njk" %}
+      </aside>
     </div>
-    <div class="sm:w-full dark:bg-neutral-800">
-      <div class="sm:max-w-screen-lg sm:mx-auto sm:py-24">
-        <main class="dark:bg-neutral-900">
+    {# <div class="sm:w-full dark:bg-neutral-800"> #}
+    <div class="sm:w-full">
+      <div>
+        {# <main class="dark:bg-neutral-900"> #}
+        <article class="">
           {% if tcaShowHero %}
-            {% include "blocks/common/hero.njk" %}
+            <header class="dark:bg-black dark:bg-opacity-50 py-16">
+              {% include "blocks/common/hero.njk" %}
+            </header>
           {% endif %}
-          {% include "blocks/common/screenshots.njk" %}
-          <div>
+          {% if tcaScreenshots %}
+            <section class="dark:bg-black dark:bg-opacity-10 py-12">
+              {% include "blocks/common/screenshots.njk" %}
+            </section>
+          {% endif %}
+          <main class="dark:bg-black dark:bg-opacity-25 py-16">
             {{ content | safe }}
-          </div>
-        </main>
-
-        {% include "blocks/common/footer.njk" %}
+          </main>
+        </article>
+        
+        <footer class="dark:bg-black dark:bg-opacity-50 py-16">
+          {% include "blocks/common/footer.njk" %}
+        </footer>
       </div>
     </div>
   </div>

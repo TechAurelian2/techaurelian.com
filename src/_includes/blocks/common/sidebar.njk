@@ -16,14 +16,16 @@
   </li>
 {% endmacro %}
 
+{# text-white py-16 px-8 #}
+
 {# <header class="dark:bg-neutral-900 text-white py-16 px-8 h-full"> #}
-<header class="dark:bg-neutral-900 text-white py-16 px-8 h-full">
-  <div class="">
-    <a class="text-3xl font-bold" href="{{ '/' | url }}">
-      <img src="/assets/img/branding/logo/techaurelian-logo-square-white.svg" alt="TechAurelian">
+{# <header class="dark:bg-black dark:bg-opacity-90 text-white py-16 px-8 h-full"> #}
+  <div class="tca-container max-w-xs">
+    <a class="" href="{{ '/' | url }}">
+      <img src="/assets/img/branding/logo/techaurelian-logo-white.svg" alt="TechAurelian">
     </a>
 
-    <nav class="font-medium">
+    <nav class="font-medium mt-16">
       <ul class="space-y-2 mt-4">
         {# {{ headerNavItem("/", "Home", "home") }} #}
         {{ headerNavItem(title = "Apps", icon = "theme/apps.svg", link = "/apps/") }}
@@ -41,4 +43,4 @@
       </ul>
     </nav>
   </div>
-</header>
+{# </header> #}
