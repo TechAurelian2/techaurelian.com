@@ -1,30 +1,40 @@
-{% macro appListItemCustom(title, description, url) %}
-  <li class="text-gray-500 sm:text-lg dark:text-gray-400">
+{% from "templates/screenshots.njk" import screenshotItem with context %}
 
-    {# App title #}
-    <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">
-      <a href="{{ url }}">{{ title }}</a>
-    </h2>
-    
-    {# App description #}
-    {% if description %}
-      <p class="mb-4 font-light">{{ description }}</p>
-    {% endif %}
+{% macro appListItemCustom(title, description, url, screenshot) %}
+  <li class="text-gray-500 sm:text-lg dark:text-gray-400 flex items-center gap-8">
+    <div class="w-1/4 shrink-0">
+      {# App screenshot #}
+      {% if screenshot %}
+        {{ screenshotItem(screenshot, inFlex = false) }}
+      {% endif %}
+    </div>
 
-    {# Learn More link #}
-    {% if url %}
-      <a href="{{ url }}" class="inline-flex items-center font-medium text-indigo-600 hover:text-indigo-800 dark:text-indigo-500 dark:hover:text-indigo-700">
-        Learn more
-        <svg class="ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-      </a>
-    {% endif %}
+    <div>
+      {# App title #}
+      <h2 class="mb-4 text-2xl md:text-3xl xl:text-4xl tracking-tight font-bold text-gray-900 dark:text-white">
+        <a href="{{ url }}">{{ title }}</a>
+      </h2>
+      
+      {# App description #}
+      {% if description %}
+        <p class="mb-4 font-light">{{ description }}</p>
+      {% endif %}
+
+      {# Learn More link #}
+      {% if url %}
+        <a href="{{ url }}" class="inline-flex items-center font-medium text-indigo-600 hover:text-indigo-800 dark:text-indigo-500 dark:hover:text-indigo-700">
+          Learn more
+          <svg class="ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+        </a>
+      {% endif %}
+    </div>
   </li>
 {% endmacro %}
 
 {% macro appList(apps) %}
   <ul class="space-y-16">
     {% for app in apps %}
-      {{ appListItemCustom(app.title, app.description, app.url) }}
+      {{ appListItemCustom(app.title, app.description, app.url, app.screenshots[0]) }}
     {% endfor %}
   </ul>
 {% endmacro %}

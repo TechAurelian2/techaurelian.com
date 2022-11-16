@@ -1,13 +1,13 @@
-{% macro screenshot(image, aspectRatio, class) -%}
-  <div class="{{ class }} {% if aspectRatio %} {{ aspectRatio }} {% endif %}">
-    <img class="tca-device-border" data-blink-src="{{ site.imagesUrl }}{{ image }}">
+{% macro screenshotItem(screenshot, inFlex = true) -%}
+  <div class="{{ screenshot.flexWidth if inFlex }} {{ screenshot.aspectRatio }} flex items-center">
+    <img class="tca-device-border" data-blink-src="{{ site.imagesUrl }}{{ screenshot.image }}" alt="{{ screenshot.alt }}">
   </div>
 {%- endmacro %}
 
 {% macro screenshotsFlex(screenshots) -%}
   <div class="flex gap-8 justify-center items-center">
-    {% for shot in screenshots %}
-      {{ screenshot(shot.image, shot.aspectRatio, shot.flexWidth) }}
+    {% for screenshot in screenshots %}
+      {{ screenshotItem(screenshot) }}
     {% endfor %}
   </div>
 {%- endmacro %}
