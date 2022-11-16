@@ -3,7 +3,7 @@ title: Hello World Toast
 
 tcaHero:
   showSectionName: false
-  ctaButton: Install/Run
+  ctaButton: Install
   ctaButtonLink: /helloworldtoast/download/
   ctaInfo: On Android
 

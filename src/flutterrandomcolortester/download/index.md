@@ -1,6 +1,6 @@
 ---
-title: Install/Run
-tcaSeoTitle: Flutter Random Color Tester - Install/Run
+title: Install or Run
+tcaSeoTitle: Install or Run Flutter Random Color Tester
 ---
 
 {% from "templates/buttons.njk" import primaryLinkButton with context %}

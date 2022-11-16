@@ -4,7 +4,7 @@ title: Flutter Random Color Tester
 tcaHero:
   showSectionName: false
   isLongTitle: true
-  ctaButton: Install/Run
+  ctaButton: Install or Run
   ctaButtonLink: /flutterrandomcolortester/download/
   ctaInfo: In your browser on Android, ChromeOS, iOS, Linux, macOS, Windows, and more.
 

@@ -3,7 +3,7 @@ title: Hello World Counters
 
 tcaHero:
   showSectionName: false
-  ctaButton: Install/Run
+  ctaButton: Install or Run
   ctaButtonLink: /helloworldcounters/download/
   ctaInfo: Natively on Android. In your browser on Android, ChromeOS, iOS, Linux, macOS, Windows, and more.
 

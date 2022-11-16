@@ -1,6 +1,6 @@
 ---
-title: Install/Run
-tcaSeoTitle: Hello World Toast - Install/Run
+title: Install
+tcaSeoTitle: Install Hello World Toast
 ---
 
 ## Native Android App {.mt-0}

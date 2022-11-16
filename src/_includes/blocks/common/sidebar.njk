@@ -1,5 +1,5 @@
-{% macro headerNavItem(title, icon, label, link) %}
-  <li>
+{% macro headerNavItem(title, icon, label, link, isMobileVisible = true) %}
+  <li class="{{ 'hidden lg:block' if not isMobileVisible }} md:mx-2 lg:mx-0">
     <a href="{{ link | url }}" class="flex items-center p-2 text-base font-normal text-neutral-900 rounded-lg dark:text-white hover:bg-neutral-100 dark:hover:bg-neutral-700">
         {% if icon %}
           {% set svgClasses = "flex-shrink-0 w-6 h-6 text-neutral-500 transition duration-75 dark:text-neutral-400 group-hover:text-neutral-900 dark:group-hover:text-white" %}
@@ -14,23 +14,25 @@
   </li>
 {% endmacro %}
 
-<div class="tca-container max-w-xs">
+{# lg:px-4 xl:px-8 #}
+
+<div class=" tca-container-md xl:px-8 flex lg:block items-center justify-between">
   <a class="" href="{{ '/' | url }}">
-    <img class="w-64 mx-auto" src="/assets/img/branding/logo/techaurelian-logo-white.svg" alt="TechAurelian">
+    <img class="w-32 md:w-24 lg:w-48 xl:w-64 mx-auto" src="/assets/img/branding/logo/techaurelian-logo-white.svg" alt="TechAurelian">
   </a>
 
-  <nav class="font-medium mt-16">
-    <ul class="space-y-2 mt-4">
+  <nav class="font-medium lg:mt-16 lg:divide-y lg:dark:divide-neutral-700 md:flex lg:block">
+    <ul class="lg:mt-4 lg:space-y-2">
       {# {{ headerNavItem("/", "Home", "home") }} #}
       {{ headerNavItem(title = "Apps", icon = "theme/apps.svg", link = "/apps/") }}
-      {{ headerNavItem(title = "Hello World Counters", label = "v1.1", link = "/helloworldcounters/") }}
-      {{ headerNavItem(title = "Hello World Toast", link = "/helloworldtoast/") }}
+      {{ headerNavItem(title = "Hello World Counters", label = "v1.1", link = "/helloworldcounters/", isMobileVisible = false) }}
+      {{ headerNavItem(title = "Hello World Toast", link = "/helloworldtoast/", isMobileVisible = false) }}
     </ul>
-    <ul class="pt-4 mt-4 space-y-2 border-t border-neutral-200 dark:border-neutral-700">
+    <ul class="lg:pt-4 lg:mt-4 lg:space-y-2">
       {{ headerNavItem(title = "Tests", icon = "theme/tests.svg", link = "/tests/") }}
-      {{ headerNavItem(title = "Flutter Random Color Tester", label = "New", link = "/flutterrandomcolortester/") }}
+      {{ headerNavItem(title = "Flutter Random Color Tester", label = "New", link = "/flutterrandomcolortester/", isMobileVisible = false) }}
     </ul>
-    <ul class="pt-4 mt-4 space-y-2 border-t border-neutral-200 dark:border-neutral-700">
+    <ul class="lg:pt-4 lg:mt-4 lg:space-y-2 md:flex lg:block">
       {# {{ headerNavItem("/reviews/", "Reviews", "reviews") }} #}
       {{ headerNavItem(title = "Contact", icon = "theme/contact.svg", link = "/contact/") }}
       {{ headerNavItem(title = "About", icon = "theme/about.svg", link = "/about/") }}

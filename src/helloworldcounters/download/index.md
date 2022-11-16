@@ -1,6 +1,6 @@
 ---
-title: Install/Run
-tcaSeoTitle: Hello World Counters - Install/Run
+title: Install or Run
+tcaSeoTitle: Install or Run Hello World Counters
 ---
 
 {% from "templates/buttons.njk" import primaryLinkButton with context %}

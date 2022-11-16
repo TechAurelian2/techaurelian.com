@@ -1,6 +1,6 @@
 url: /helloworldtoast/
 title: Hello World Toast
-description: "It may very well be the simplest Android app. Works even on Android 1.0! All it does is display the famous Hello World! text in a toast - the familiar Android small popup used to show quick messages to the user. Then the app closes, even before starting 😊"
+description: "It may very well be the simplest Android app. Works even on Android 1.0! All it does is display the famous Hello World! text in a toast - the familiar Android small popup used to show quick messages to the user. Then the app closes, even before starting... 😊"
 tags: [free, open-source, hello-world, android]
 screenshots:
   - image: /apps/helloworldtoast/screenshots/helloworldtoast-screenshot-phone.png
