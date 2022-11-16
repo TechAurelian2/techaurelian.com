@@ -1,3 +1,9 @@
+{% from "templates/screenshots.njk" import screenshotsFlex with context %}
+
 <div class="tca-container-md">
-  {% include "blocks/screenshots/" + tcaScreenshots %}
+  {% if tcaScreenshots.custom %}
+      {% include "blocks/screenshots/" + tcaScreenshots.custom %}
+  {% elseif tcaScreenshots.app %}
+    {{ screenshotsFlex(apps[tcaScreenshots.app].screenshots) }}
+  {% endif %}
 </div>

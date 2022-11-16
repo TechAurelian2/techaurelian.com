@@ -1,9 +1,9 @@
 ---
 title: Privacy Policy
-tcaSeoTitle: Hello World Counters Privacy Policy
+tcaSeoTitle: Hello World Toast Privacy Policy
 ---
 
-TechAurelian built the Hello World Counters app ("App") as a Free and Open Source app. The App is provided by TechAurelian at no cost and is intended for use as is.
+TechAurelian built the Hello World Toast app ("App") as a Free and Open Source app. The App is provided by TechAurelian at no cost and is intended for use as is.
 
 This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use the App.
 
@@ -45,7 +45,7 @@ I do not knowingly collect personally identifiable information from children. I 
 
 I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page.
 
-This policy is effective as of 2022-11-09
+This policy is effective as of 2022-11-16
 
 ## Contact Me
 

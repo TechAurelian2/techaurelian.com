@@ -2,3 +2,13 @@ url: /helloworldcounters/
 title: Hello World Counters
 description: "My first Hello World Flutter app is an easy-to-use tally counter with multiple color counters. Count people, sheep, kisses, or smiles, and nobody will know what you are counting! Increase, decrease, reset the counters, or share them with other apps."
 tags: [free, open-source, hello-world, web, android]
+screenshots:
+  - image: /apps/helloworldcounters/screenshots/helloworldcounters-screenshot-android.png
+    alt: Hello World Counters running on Android
+    aspectRatio: aspect-[540/1170]
+    flexWidth: w-4/12
+  - image: /apps/helloworldcounters/screenshots/helloworldcounters-screenshot-web.png
+    alt: Hello World Counters running in a web browser
+    aspectRatio: aspect-[1024/600]
+    flexWidth: w-8/12
+

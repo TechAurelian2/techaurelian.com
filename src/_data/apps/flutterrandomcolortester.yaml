@@ -1,0 +1,17 @@
+url: /flutterrandomcolortester/
+title: Flutter Random Color Tester
+description: "A Flutter test app that you can run in your browser to generate dozens or hundreds of attractive random colors. You can select options to influence the type of color it produces and copy the colors to the clipboard for reuse in other apps or places."
+tags: [free, open-source,test-app, web, pwa]
+screenshots:
+  - image: /apps/flutterrandomcolortester/screenshots/frctester-screenshot-generate.png
+    alt: Flutter Random Color Tester - Generate random colors
+    aspectRatio: aspect-[540/960]
+    flexWidth: w-4/12
+  - image: /apps/flutterrandomcolortester/screenshots/frctester-screenshot-colors.png
+    alt: Flutter Random Color Tester - View random Colors
+    aspectRatio: aspect-[540/960]
+    flexWidth: w-4/12
+  - image: /apps/flutterrandomcolortester/screenshots/frctester-screenshot-color.png
+    alt: Flutter Random Color Tester - Preview Random Color
+    aspectRatio: aspect-[540/960]
+    flexWidth: w-4/12

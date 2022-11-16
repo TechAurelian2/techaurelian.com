@@ -6,8 +6,11 @@ tcaSeoTitle: TechAurelian
 tcaContentHasProse: false
 ---
 
-{% from "templates/app.njk" import appListItem with context %}
+{% from "templates/app.njk" import appList with context %}
 
-{{ appListItem(apps.helloworldcounters) }}
+{{ appList([
+    apps.helloworldcounters,
+    apps.helloworldtoast,
+    apps.flutterrandomcolortester
+]) }}
 
-{{ appListItem(tests.flutterrandomcolortester) }}

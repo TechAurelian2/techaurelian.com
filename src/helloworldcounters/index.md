@@ -7,13 +7,12 @@ tcaHero:
   ctaButtonLink: /helloworldcounters/download/
   ctaInfo: Natively on Android. In your browser on Android, ChromeOS, iOS, Linux, macOS, Windows, and more.
 
+tcaScreenshots:
+  app: helloworldcounters
+
 eleventyComputed:
   tcaHero:
     subtitle: "{{ apps.helloworldcounters.description }}"
-
-tags: [free, open-source, hello-world, web, android]
-
-tcaScreenshots: apps/helloworldcounters.njk
 ---
 
 ## Overview {.mt-0}

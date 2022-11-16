@@ -4,7 +4,9 @@ title: Tests
 tcaContentHasProse: false
 ---
 
-{% from "templates/app.njk" import appListItem with context %}
+{% from "templates/app.njk" import appList with context %}
 
-{{ appListItem(tests.flutterrandomcolortester) }}
+{{ appList([
+    apps.flutterrandomcolortester
+]) }}
 

@@ -1,19 +1,30 @@
-{% macro appListItemCustom(title, description, tags, url) %}
-  <section class="mt-16">
-    <div class="text-gray-500 sm:text-lg dark:text-gray-400">
-      <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">
-        <a href="{{ url }}">{{ title }}</a>
-      </h2>
+{% macro appListItemCustom(title, description, url) %}
+  <li class="text-gray-500 sm:text-lg dark:text-gray-400">
+
+    {# App title #}
+    <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">
+      <a href="{{ url }}">{{ title }}</a>
+    </h2>
+    
+    {# App description #}
+    {% if description %}
       <p class="mb-4 font-light">{{ description }}</p>
-      {# <p class="mb-4 font-medium">{{ tags }}</p> #}
+    {% endif %}
+
+    {# Learn More link #}
+    {% if url %}
       <a href="{{ url }}" class="inline-flex items-center font-medium text-indigo-600 hover:text-indigo-800 dark:text-indigo-500 dark:hover:text-indigo-700">
         Learn more
         <svg class="ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
       </a>
-    </div>
-  </section>
+    {% endif %}
+  </li>
 {% endmacro %}
 
-{% macro appListItem(app) %}
-  {{ appListItemCustom(app.title, app.description, app.tags, app.url) }}
+{% macro appList(apps) %}
+  <ul class="space-y-16">
+    {% for app in apps %}
+      {{ appListItemCustom(app.title, app.description, app.url) }}
+    {% endfor %}
+  </ul>
 {% endmacro %}

@@ -8,13 +8,12 @@ tcaHero:
   ctaButtonLink: /flutterrandomcolortester/download/
   ctaInfo: In your browser on Android, ChromeOS, iOS, Linux, macOS, Windows, and more.
 
+tcaScreenshots:
+  app: flutterrandomcolortester
+
 eleventyComputed:
   tcaHero:
-    subtitle: "{{ tests.flutterrandomcolortester.description }}"
-
-tags: [free, open-source, test-app, web, pwa]
-
-tcaScreenshots: tests/flutterrandomcolortester.njk
+    subtitle: "{{ apps.flutterrandomcolortester.description }}"
 ---
 
 ## Overview {.mt-0}
