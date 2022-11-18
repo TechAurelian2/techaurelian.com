@@ -20,7 +20,7 @@
 
   {# Hero subtitle (description) #}
   {% if tcaHero.subtitle %}
-    <h2 class="mt-4 text-lg font-normal text-neutral-500 lg:text-xl dark:text-neutral-400 space-x-3">{{ tcaHero.subtitle }}</h2>
+    <h2 class="mt-4 text-lg font-normal text-neutral-500 lg:text-xl dark:text-neutral-400 space-x-3">{{ tcaHero.subtitle | safe }}</h2>
   {% endif %}
 
   {# Hero CTA button and info #}

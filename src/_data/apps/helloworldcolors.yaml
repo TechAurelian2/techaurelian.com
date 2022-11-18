@@ -1,0 +1,14 @@
+url: /helloworldcolors/
+title: Hello World Colors
+description: "Slate Blue. Crimson. Peach Puff. A beautiful color with a beautiful name with every shuffle! A free and open-source \"Hello, World!\" app made with Flutter."
+tags: [free, open-source, hello-world, web, android]
+screenshots:
+  - image: /apps/helloworldcolors/screenshots/helloworldcolors-screenshot-android.png
+    alt: Hello World Colors running on Android
+    aspectRatio: aspect-[540/1170]
+    flexWidth: w-4/12
+  - image: /apps/helloworldcolors/screenshots/helloworldcolors-screenshot-web.png
+    alt: Hello World Colors running in a web browser
+    aspectRatio: aspect-[1024/600]
+    flexWidth: w-8/12
+
